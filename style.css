@@ -1,0 +1,41 @@
+.racer-table td {
+  height: 100px;
+  width: 100px;
+}
+
+.racer-table {
+  display: grid;
+  place-items: center;
+}
+
+.racer-table td {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.racer-table td:last-child {
+  background-image: url(images/finish.png);
+}
+
+#player1-race td:last-child.active {
+  background-image: url("https://kitt.lewagon.com/placeholder/users/SuzukiRyuichiro"),
+    url(images/finish.png);
+  background-blend-mode: multiply;
+}
+
+#player2-race td:last-child.active {
+  background-image: url("https://ca.slack-edge.com/T02NE0241-U02TRJ4F37B-bc7b12a7f9dd-512"),
+    url(images/finish.png);
+  background-blend-mode: multiply;
+}
+
+#player1-race td.active {
+  background-image: url("https://kitt.lewagon.com/placeholder/users/SuzukiRyuichiro");
+}
+#player2-race td.active {
+  background-image: url("https://ca.slack-edge.com/T02NE0241-U02TRJ4F37B-bc7b12a7f9dd-512");
+}
+
+p {
+  text-align: center;
+}
